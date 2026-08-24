@@ -27,6 +27,7 @@ const navLinks = document.querySelectorAll('#menu ul a.link');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
+    console.log(navLinks)
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       const headerHeight = document.querySelector('header').offsetHeight;
